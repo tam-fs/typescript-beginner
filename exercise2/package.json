@@ -1,0 +1,19 @@
+{
+  "name": "exercise2",
+  "version": "1.0.0",
+  "description": "exercise 2 in typescript demo",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "tamhtn",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@types/readline-sync": "^1.4.8",
+    "readline-sync": "^1.4.10"
+  }
+}

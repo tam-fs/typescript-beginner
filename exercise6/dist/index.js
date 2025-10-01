@@ -1,8 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let arr = [];
-for (let i = 1; i < 51; i++) {
-    arr.push(i);
+let arr = Array.from(Array(50).keys()).map(x => x + 1);
+let evenArr = arr.filter(isEven);
+let oddArr = arr.filter(isOdd);
+console.log("Số chẵn: ", evenArr.toString());
+console.log("Số lẻ: ", oddArr.toString());
+function isEven(num) {
+    return num % 2 === 0;
 }
-console.log(arr);
+function isOdd(num) {
+    return num % 2 !== 0;
+}
 //# sourceMappingURL=index.js.map

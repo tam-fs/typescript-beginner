@@ -80,5 +80,9 @@ function mul (a: number, b: number): number {
 }
 
 function div (a: number, b: number): number {
+    if (b === 0) {
+        console.log("Không thể chia cho 0");
+        return 0;
+    }
     return a / b;
 }
